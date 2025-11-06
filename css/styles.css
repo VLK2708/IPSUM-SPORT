@@ -1,0 +1,100 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+  color: #000000;
+  margin: 0;
+  padding: 0px;
+}
+/* ====== FOOTER ====== */
+.footer {
+  background-color: #010101;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* centra los textos en horizontal */
+  gap: 30px; /* espacio entre los textos */
+  flex-wrap: wrap; /* si la pantalla es pequeña, se acomodan en varias líneas */
+  margin-bottom: 20px;
+}
+
+.footer-container a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-container a:hover {
+  color: #9f9fa9; /* color dorado al pasar el mouse */
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* ====== PRODUCT CARDS ====== */
+.product-card {
+  border: none; /* Quita el borde gris por defecto de Bootstrap */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.product-card:hover {
+  transform: translateY(-8px); /* Eleva la tarjeta ligeramente */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* sombra más visible */
+}
+
+/* Imagen del producto */
+.product-card img {
+  width : 100%;
+  height: auto; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  transition: transform 0.4s ease;
+}
+
+/* Zoom en la imagen al pasar el mouse */
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Título y texto */
+.product-card .card-body {
+  padding: 15px;
+}
+
+.product-card .card-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.product-card .card-text {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Botón de "Ver detalles" */
+.product-card .btn-primary {
+  background-color: #2b2bff;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .btn-primary:hover {
+  background-color: #1a1ad1;
+}
+
+img-fija {
+  max-width: 50%;   /* no se estira más allá de su tamaño original */
+  height: auto;      /* mantiene proporción */
+}
